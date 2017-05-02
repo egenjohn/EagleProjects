@@ -9840,6 +9840,50 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="XTConnector">
+<packages>
+<package name="XT60">
+<pad name="NEG" x="0" y="3.4544" drill="4.318" shape="octagon"/>
+<pad name="POS" x="0" y="-3.4544" drill="4.318"/>
+<wire x1="-4.064" y1="-7.62" x2="4.064" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="4.064" y1="-7.62" x2="4.064" y2="6.35" width="0.127" layer="21"/>
+<wire x1="4.064" y1="6.35" x2="1.27" y2="8.89" width="0.127" layer="21"/>
+<wire x1="1.27" y1="8.89" x2="-1.27" y2="8.89" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="8.89" x2="-4.064" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-4.064" y1="6.35" x2="-4.064" y2="-7.62" width="0.127" layer="21"/>
+<text x="5.08" y="2.54" size="3.81" layer="21">-</text>
+<text x="5.08" y="-3.81" size="3.81" layer="21">+</text>
+</package>
+</packages>
+<symbols>
+<symbol name="XT60">
+<pin name="POS" x="0" y="2.54" length="middle"/>
+<pin name="NEG" x="0" y="-2.54" length="middle"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="XT60">
+<gates>
+<gate name="G$1" symbol="XT60" x="-7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="XT60">
+<connects>
+<connect gate="G$1" pin="NEG" pad="NEG"/>
+<connect gate="G$1" pin="POS" pad="POS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9876,6 +9920,9 @@ Source: www.kingbright.com</description>
 <part name="U$2" library="Picoblade" deviceset="PICOBLADE-2PIN" device=""/>
 <part name="C3" library="rcl" deviceset="C-US" device="C0805" value="4.7uF"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="U$3" library="XTConnector" deviceset="XT60" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="P+5" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9900,6 +9947,9 @@ Source: www.kingbright.com</description>
 <instance part="Q1" gate="G$1" x="93.98" y="22.86"/>
 <instance part="P+2" gate="VCC" x="101.6" y="33.02"/>
 <instance part="P+3" gate="1" x="116.84" y="27.94"/>
+<instance part="U$3" gate="G$1" x="20.32" y="5.08"/>
+<instance part="GND7" gate="1" x="17.78" y="-2.54"/>
+<instance part="P+5" gate="VCC" x="17.78" y="12.7"/>
 </instances>
 <busses>
 </busses>
@@ -9932,6 +9982,12 @@ Source: www.kingbright.com</description>
 <wire x1="99.06" y1="25.4" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="25.4" x2="101.6" y2="30.48" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<pinref part="U$3" gate="G$1" pin="POS"/>
+<wire x1="17.78" y1="10.16" x2="17.78" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -9962,6 +10018,12 @@ Source: www.kingbright.com</description>
 <wire x1="109.22" y1="0" x2="109.22" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="109.22" y1="-5.08" x2="109.22" y2="0" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="NEG"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="20.32" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="2.54" x2="17.78" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
