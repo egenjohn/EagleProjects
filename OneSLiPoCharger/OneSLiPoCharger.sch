@@ -9802,8 +9802,8 @@ Source: www.kingbright.com</description>
 <library name="Picoblade">
 <packages>
 <package name="PICOBLADE-2PIN">
-<pad name="P$1" x="-0.624840625" y="0" drill="0.5" diameter="0.8128" shape="long" rot="R90"/>
-<pad name="P$2" x="0.624840625" y="0" drill="0.5" diameter="0.8128" shape="long" rot="R90"/>
+<pad name="P$1" x="-0.624840625" y="0" drill="0.5" diameter="0.7112" shape="long" rot="R90"/>
+<pad name="P$2" x="0.624840625" y="0" drill="0.5" diameter="0.7112" shape="long" rot="R90"/>
 <wire x1="-1.27" y1="-2.54" x2="-2.1336" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="-2.1336" y1="-2.54" x2="-2.1336" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-2.1336" y1="1.27" x2="2.1336" y2="1.27" width="0.127" layer="21"/>
@@ -10052,7 +10052,7 @@ Source: www.kingbright.com</description>
 <wire x1="17.78" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$50" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="A"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -10321,7 +10321,7 @@ Source: www.kingbright.com</description>
 <wire x1="20.32" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$50" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
