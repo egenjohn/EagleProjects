@@ -10052,7 +10052,7 @@ Source: www.kingbright.com</description>
 <wire x1="17.78" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="N$50" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="A"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -10321,7 +10321,7 @@ Source: www.kingbright.com</description>
 <wire x1="20.32" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="N$50" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
