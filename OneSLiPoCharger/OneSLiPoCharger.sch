@@ -10008,11 +10008,11 @@ Source: www.kingbright.com</description>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="1N4728" device=""/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0411/12" value="1K"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="D2" library="diode" deviceset="1N4728" device=""/>
-<part name="R3" library="rcl" deviceset="R-US_" device="0411/12" value="10K"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="10K"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0411/12" value="4.7K"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="4.7K"/>
 <part name="C1" library="rcl" deviceset="C-US" device="025-025X050"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="Q1" library="transistor-fet" deviceset="BUZ10" device=""/>
@@ -10033,7 +10033,7 @@ Source: www.kingbright.com</description>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="3MM"/>
-<part name="R5" library="rcl" deviceset="R-US_" device="0411/12" value="4.7K"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="4.7K"/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="MCP73831" deviceset="MCP73831" device=""/>
@@ -10193,11 +10193,7 @@ Source: www.kingbright.com</description>
 <wire x1="58.42" y1="2.54" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="B" pin="-IN"/>
-<wire x1="68.58" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="17.78" x2="66.04" y2="0" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="0" x2="104.14" y2="0" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="0" x2="104.14" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="0" x2="109.22" y2="0" width="0.1524" layer="91"/>
@@ -10268,6 +10264,11 @@ Source: www.kingbright.com</description>
 <wire x1="109.22" y1="20.32" x2="116.84" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="116.84" y1="20.32" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="20.32" x2="99.06" y2="0" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="B" pin="-IN"/>
+<wire x1="68.58" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="17.78" x2="66.04" y2="0" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="0" x2="66.04" y2="0" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+6" gate="1" pin="+5V"/>
