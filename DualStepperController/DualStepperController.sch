@@ -7716,7 +7716,6 @@ drill 1.4 mm</description>
 <part name="MOT2" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="I2CIN" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="VSS1" library="supply1" deviceset="VSS" device=""/>
-<part name="VSS2" library="supply1" deviceset="VSS" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -7725,7 +7724,7 @@ drill 1.4 mm</description>
 <part name="C1" library="rcl" deviceset="C-US" device="025-024X044"/>
 <part name="C2" library="rcl" deviceset="C-US" device="025-024X044"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="0411/12" value="10k"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="0207/7" value="10k"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-2X3" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
@@ -7737,6 +7736,7 @@ drill 1.4 mm</description>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="VSS" library="solpad" deviceset="SE14" device=""/>
 <part name="GND" library="solpad" deviceset="SE14" device=""/>
+<part name="SER" library="pinhead" deviceset="PINHD-1X3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7750,7 +7750,6 @@ drill 1.4 mm</description>
 <instance part="MOT2" gate="A" x="127" y="33.02"/>
 <instance part="I2CIN" gate="A" x="2.54" y="88.9" rot="R180"/>
 <instance part="VSS1" gate="G$1" x="134.62" y="15.24"/>
-<instance part="VSS2" gate="G$1" x="17.78" y="17.78"/>
 <instance part="GND1" gate="1" x="78.74" y="48.26"/>
 <instance part="GND2" gate="1" x="78.74" y="15.24"/>
 <instance part="GND3" gate="1" x="12.7" y="50.8"/>
@@ -7771,6 +7770,7 @@ drill 1.4 mm</description>
 <instance part="P+4" gate="VCC" x="104.14" y="91.44" rot="R180"/>
 <instance part="VSS" gate="1" x="78.74" y="101.6"/>
 <instance part="GND" gate="1" x="101.6" y="83.82" rot="R270"/>
+<instance part="SER" gate="A" x="2.54" y="68.58" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7847,10 +7847,13 @@ drill 1.4 mm</description>
 <segment>
 <pinref part="I2CIN" gate="A" pin="1"/>
 <wire x1="5.08" y1="86.36" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="86.36" x2="12.7" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="86.36" x2="12.7" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="U$1" gate="G$1" pin="GND@1"/>
+<wire x1="12.7" y1="71.12" x2="12.7" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="SER" gate="A" pin="3"/>
+<wire x1="5.08" y1="71.12" x2="12.7" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND@2"/>
@@ -8086,6 +8089,20 @@ drill 1.4 mm</description>
 <wire x1="27.94" y1="40.64" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="IN3"/>
 <wire x1="27.94" y1="33.02" x2="81.28" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="SER" gate="A" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="PD1"/>
+<wire x1="5.08" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PD0"/>
+<pinref part="SER" gate="A" pin="2"/>
+<wire x1="30.48" y1="68.58" x2="5.08" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
