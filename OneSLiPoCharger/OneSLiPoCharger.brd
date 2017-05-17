@@ -8,22 +8,22 @@
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="11" fill="1" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -261,6 +261,7 @@
 <wire x1="23.368" y1="23.368" x2="23.368" y2="24.384" width="0.1016" layer="146"/>
 <wire x1="23.368" y1="24.384" x2="22.352" y2="23.368" width="0.1016" layer="146"/>
 <wire x1="22.352" y1="23.368" x2="22.352" y2="24.384" width="0.1016" layer="146"/>
+<text x="45.72" y="22.86" size="1.016" layer="21">BAT4</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -2428,7 +2429,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="43.18" y1="31.75" x2="48.26" y2="26.67" width="0.6096" layer="16"/>
 <wire x1="48.26" y1="26.67" x2="62.23" y2="26.67" width="0.6096" layer="16"/>
 <wire x1="53.34" y1="21.59" x2="48.26" y2="26.67" width="0.6096" layer="16"/>
-<wire x1="45.72" y1="26.67" x2="48.26" y2="26.67" width="0.6096" layer="16"/>
+<wire x1="48.26" y1="26.67" x2="45.72" y2="26.67" width="0.6096" layer="16"/>
 <contactref element="JP1" pad="1"/>
 <contactref element="IC1" pad="6"/>
 <wire x1="19.05" y1="27.94" x2="19.05" y2="25.4" width="0.6096" layer="16"/>

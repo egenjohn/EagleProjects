@@ -9936,8 +9936,8 @@ Source: www.kingbright.com</description>
 <package name="MP1584MOD-TH">
 <pad name="ONEG" x="0" y="0" drill="0.8" diameter="1.778" shape="square"/>
 <pad name="OPOS" x="0" y="13.335" drill="0.8" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="IPOS" x="18.415" y="13.335" drill="0.8" diameter="1.778" shape="octagon"/>
-<pad name="INEG" x="18.415" y="0" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="IPOS" x="18.669" y="13.335" drill="0.8" diameter="1.778" shape="octagon"/>
+<pad name="INEG" x="18.669" y="0" drill="0.8" diameter="1.778" shape="square"/>
 <wire x1="-1.905" y1="15.24" x2="20.32" y2="15.24" width="0.254" layer="21"/>
 <wire x1="20.32" y1="15.24" x2="20.32" y2="-1.905" width="0.254" layer="21"/>
 <wire x1="20.32" y1="-1.905" x2="-1.905" y2="-1.905" width="0.254" layer="21"/>
@@ -9945,6 +9945,14 @@ Source: www.kingbright.com</description>
 <text x="17.78" y="5.08" size="2.54" layer="21" rot="R90">IN</text>
 <text x="3.81" y="2.54" size="2.54" layer="21" rot="R90">OUT</text>
 <text x="2.54" y="11.43" size="2.54" layer="21">MP1584</text>
+<pad name="ONEG1" x="0" y="2.54" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="INEG1" x="18.669" y="2.54" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="IPOS1" x="18.669" y="10.795" drill="0.8" diameter="1.778" shape="octagon"/>
+<pad name="OPOS1" x="0" y="10.795" drill="0.8" diameter="1.778" shape="octagon" rot="R90"/>
+<rectangle x1="-0.889" y1="11.43" x2="0.889" y2="12.7" layer="17"/>
+<rectangle x1="-0.889" y1="0.635" x2="0.889" y2="1.905" layer="17"/>
+<rectangle x1="17.78" y1="0.635" x2="19.558" y2="1.905" layer="17"/>
+<rectangle x1="17.78" y1="11.43" x2="19.558" y2="12.7" layer="17"/>
 </package>
 </packages>
 <symbols>
@@ -9968,10 +9976,10 @@ Source: www.kingbright.com</description>
 <devices>
 <device name="" package="MP1584MOD-TH">
 <connects>
-<connect gate="G$1" pin="INEG" pad="INEG"/>
-<connect gate="G$1" pin="IPOS" pad="IPOS"/>
-<connect gate="G$1" pin="ONEG" pad="ONEG"/>
-<connect gate="G$1" pin="OPOS" pad="OPOS"/>
+<connect gate="G$1" pin="INEG" pad="INEG INEG1"/>
+<connect gate="G$1" pin="IPOS" pad="IPOS IPOS1"/>
+<connect gate="G$1" pin="ONEG" pad="ONEG ONEG1"/>
+<connect gate="G$1" pin="OPOS" pad="OPOS OPOS1"/>
 </connects>
 <technologies>
 <technology name=""/>
