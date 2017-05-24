@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -58,7 +58,7 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="pot">
+<library name="pot" urn="urn:adsk.eagle:library:331">
 <description>&lt;b&gt;Potentiometers&lt;/b&gt;&lt;p&gt;
 Beckman, Copal, Piher, Spectrol, Schukat&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -2179,7 +2179,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="linear">
+<library name="linear" urn="urn:adsk.eagle:library:262">
 <description>&lt;b&gt;Linear Devices&lt;/b&gt;&lt;p&gt;
 Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -2313,7 +2313,7 @@ Source: http://cache.national.com/ds/LM/LM158.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="supply1">
+<library name="supply1" urn="urn:adsk.eagle:library:371">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
  Please keep in mind, that these devices are necessary for the
@@ -2384,7 +2384,7 @@ Source: http://cache.national.com/ds/LM/LM158.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="diode">
+<library name="diode" urn="urn:adsk.eagle:library:210">
 <description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
 Based on the following sources:
 &lt;ul&gt;
@@ -2456,7 +2456,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="rcl">
+<library name="rcl" urn="urn:adsk.eagle:library:334">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
 &lt;ul&gt;
@@ -8192,7 +8192,7 @@ package type OT</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="led">
+<library name="led" urn="urn:adsk.eagle:library:259">
 <description>&lt;b&gt;LEDs&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;br&gt;
 Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternational.com&amp;gt;&lt;/author&gt; with DUOLED</description>
@@ -9782,7 +9782,7 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="pinhead">
+<library name="pinhead" urn="urn:adsk.eagle:library:325">
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
@@ -9949,10 +9949,6 @@ Source: www.kingbright.com</description>
 <pad name="INEG1" x="18.669" y="2.54" drill="0.8" diameter="1.778" shape="square"/>
 <pad name="IPOS1" x="18.669" y="10.795" drill="0.8" diameter="1.778" shape="octagon"/>
 <pad name="OPOS1" x="0" y="10.795" drill="0.8" diameter="1.778" shape="octagon" rot="R90"/>
-<rectangle x1="-0.889" y1="11.43" x2="0.889" y2="12.7" layer="17"/>
-<rectangle x1="-0.889" y1="0.635" x2="0.889" y2="1.905" layer="17"/>
-<rectangle x1="17.78" y1="0.635" x2="19.558" y2="1.905" layer="17"/>
-<rectangle x1="17.78" y1="11.43" x2="19.558" y2="12.7" layer="17"/>
 </package>
 </packages>
 <symbols>
@@ -9999,99 +9995,99 @@ Source: www.kingbright.com</description>
 </class>
 </classes>
 <parts>
-<part name="R1" library="pot" deviceset="TRIM_US-" device="B25P"/>
-<part name="IC1" library="linear" deviceset="LM358" device="N"/>
-<part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="D1" library="diode" deviceset="1N4728" device=""/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
+<part name="R1" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="TRIM_US-" device="B25P"/>
+<part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM358" device="N"/>
+<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4728" device=""/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="U$1" library="MCP73831" deviceset="MCP73831" device=""/>
-<part name="P+4" library="supply1" deviceset="+5V" device=""/>
-<part name="LED2" library="led" deviceset="LED" device="3MM"/>
-<part name="C2" library="rcl" deviceset="C-US" device="C0805" value="4.7uF"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="M0805"/>
-<part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="R7" library="rcl" deviceset="R-US_" device="M0805" value="3.9k"/>
+<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM"/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805"/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" value="3.9k"/>
 <part name="U$2" library="Picoblade" deviceset="PICOBLADE-2PIN" device=""/>
-<part name="C3" library="rcl" deviceset="C-US" device="C0805" value="4.7uF"/>
-<part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$3" library="XTConnector" deviceset="XT60" device=""/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="P+5" library="supply1" deviceset="VCC" device=""/>
-<part name="LED1" library="led" deviceset="LED" device="3MM"/>
-<part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="4.7K"/>
-<part name="P+6" library="supply1" deviceset="+5V" device=""/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" value="4.7K"/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$4" library="MCP73831" deviceset="MCP73831" device=""/>
-<part name="P+7" library="supply1" deviceset="+5V" device=""/>
-<part name="LED3" library="led" deviceset="LED" device="3MM"/>
-<part name="C4" library="rcl" deviceset="C-US" device="C0805" value="4.7uF"/>
-<part name="R8" library="rcl" deviceset="R-US_" device="M0805"/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="R9" library="rcl" deviceset="R-US_" device="M0805" value="3.9k"/>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805"/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" value="3.9k"/>
 <part name="U$5" library="Picoblade" deviceset="PICOBLADE-2PIN" device=""/>
-<part name="C5" library="rcl" deviceset="C-US" device="C0805" value="4.7uF"/>
-<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$6" library="MCP73831" deviceset="MCP73831" device=""/>
-<part name="P+8" library="supply1" deviceset="+5V" device=""/>
-<part name="LED4" library="led" deviceset="LED" device="3MM"/>
-<part name="C6" library="rcl" deviceset="C-US" device="C0805" value="4.7uF"/>
-<part name="R10" library="rcl" deviceset="R-US_" device="M0805"/>
-<part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="R11" library="rcl" deviceset="R-US_" device="M0805" value="3.9k"/>
+<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805"/>
+<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" value="3.9k"/>
 <part name="U$7" library="Picoblade" deviceset="PICOBLADE-2PIN" device=""/>
-<part name="C7" library="rcl" deviceset="C-US" device="C0805" value="4.7uF"/>
-<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$8" library="MCP73831" deviceset="MCP73831" device=""/>
-<part name="P+9" library="supply1" deviceset="+5V" device=""/>
-<part name="LED5" library="led" deviceset="LED" device="3MM"/>
-<part name="C8" library="rcl" deviceset="C-US" device="C0805" value="4.7uF"/>
-<part name="R12" library="rcl" deviceset="R-US_" device="M0805"/>
-<part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="R13" library="rcl" deviceset="R-US_" device="M0805" value="3.9k"/>
+<part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="LED5" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM"/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805"/>
+<part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" value="3.9k"/>
 <part name="U$9" library="Picoblade" deviceset="PICOBLADE-2PIN" device=""/>
-<part name="C9" library="rcl" deviceset="C-US" device="C0805" value="4.7uF"/>
-<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$10" library="MCP73831" deviceset="MCP73831" device=""/>
-<part name="P+10" library="supply1" deviceset="+5V" device=""/>
-<part name="LED6" library="led" deviceset="LED" device="3MM"/>
-<part name="C10" library="rcl" deviceset="C-US" device="C0805" value="4.7uF"/>
-<part name="R14" library="rcl" deviceset="R-US_" device="M0805"/>
-<part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="GND19" library="supply1" deviceset="GND" device=""/>
-<part name="R15" library="rcl" deviceset="R-US_" device="M0805" value="3.9k"/>
+<part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="LED6" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM"/>
+<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805"/>
+<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" value="3.9k"/>
 <part name="U$11" library="Picoblade" deviceset="PICOBLADE-2PIN" device=""/>
-<part name="C11" library="rcl" deviceset="C-US" device="C0805" value="4.7uF"/>
-<part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$12" library="MCP73831" deviceset="MCP73831" device=""/>
-<part name="P+11" library="supply1" deviceset="+5V" device=""/>
-<part name="LED7" library="led" deviceset="LED" device="3MM"/>
-<part name="C12" library="rcl" deviceset="C-US" device="C0805" value="4.7uF"/>
-<part name="R16" library="rcl" deviceset="R-US_" device="M0805"/>
-<part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="R17" library="rcl" deviceset="R-US_" device="M0805" value="3.9k"/>
+<part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="LED7" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM"/>
+<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805"/>
+<part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" value="3.9k"/>
 <part name="U$13" library="Picoblade" deviceset="PICOBLADE-2PIN" device=""/>
-<part name="C13" library="rcl" deviceset="C-US" device="C0805" value="4.7uF"/>
-<part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="GND24" library="supply1" deviceset="GND" device=""/>
-<part name="P+12" library="supply1" deviceset="+5V" device=""/>
-<part name="P+13" library="supply1" deviceset="VCC" device=""/>
-<part name="R18" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
-<part name="R19" library="rcl" deviceset="R-US_" device="0207/10" value="470K"/>
+<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device=""/>
+<part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" value="1K"/>
+<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" value="470K"/>
 <part name="U$14" library="VRegModules" deviceset="MP1584EN-MOD" device=""/>
-<part name="P+2" library="supply1" deviceset="VCC" device=""/>
-<part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="P+3" library="supply1" deviceset="+5V" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X1" device=""/>
-<part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="4.7K"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
-<part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device=""/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" value="4.7K"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" value="1K"/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10762,4 +10758,11 @@ Source: www.kingbright.com</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, Eagle supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+</compatibility>
 </eagle>
