@@ -4664,15 +4664,15 @@ Grid 5.08 mm&lt;p&gt;
 <part name="PCB1" library="E14_Arduino_revC" deviceset="ARDUINO_NANO" device=""/>
 <part name="S1" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="S2" library="switch-omron" deviceset="10-XX" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="0204/5"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0204/5"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X4" device="" value="OLED"/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X5" device="" value="Thermo"/>
 <part name="T1" library="adafruit" deviceset="2N2222" device=""/>
 <part name="SG1" library="buzzer" deviceset="F/CM12P" device=""/>
 <part name="U$1" library="LM7805" deviceset="7805-TO220V" device=""/>
 <part name="J1" library="con-jack-jke" deviceset="DCJ0202" device=""/>
-<part name="R3" library="rcl" deviceset="R-US_" device="0204/5"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
