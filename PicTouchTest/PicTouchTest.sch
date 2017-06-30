@@ -497,6 +497,9 @@
 <package name="10MMROUND">
 <smd name="P$1" x="0" y="0" dx="9.99998125" dy="9.99998125" layer="1" roundness="100"/>
 </package>
+<package name="20MMROUND">
+<smd name="P$1" x="0" y="0" dx="19.9898" dy="19.9898" layer="1" roundness="100" stop="no" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPTOUCH">
@@ -522,6 +525,14 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="20MMRND" package="20MMROUND">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -540,12 +551,12 @@
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="PK3HDR" library="pinhead" deviceset="PINHD-1X6" device=""/>
-<part name="U$2" library="CapTouch" deviceset="CAPTOUCH" device=""/>
-<part name="U$3" library="CapTouch" deviceset="CAPTOUCH" device=""/>
-<part name="U$4" library="CapTouch" deviceset="CAPTOUCH" device=""/>
-<part name="U$5" library="CapTouch" deviceset="CAPTOUCH" device=""/>
-<part name="U$6" library="CapTouch" deviceset="CAPTOUCH" device=""/>
-<part name="U$7" library="CapTouch" deviceset="CAPTOUCH" device=""/>
+<part name="U$2" library="CapTouch" deviceset="CAPTOUCH" device="20MMRND" value="CAPTOUCH20MMRND"/>
+<part name="U$3" library="CapTouch" deviceset="CAPTOUCH" device="20MMRND" value="CAPTOUCH20MMRND"/>
+<part name="U$4" library="CapTouch" deviceset="CAPTOUCH" device="20MMRND" value="CAPTOUCH20MMRND"/>
+<part name="U$5" library="CapTouch" deviceset="CAPTOUCH" device="20MMRND" value="CAPTOUCH20MMRND"/>
+<part name="U$6" library="CapTouch" deviceset="CAPTOUCH" device="20MMRND" value="CAPTOUCH20MMRND"/>
+<part name="U$7" library="CapTouch" deviceset="CAPTOUCH" device="20MMRND" value="CAPTOUCH20MMRND"/>
 <part name="I2CHDR" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
