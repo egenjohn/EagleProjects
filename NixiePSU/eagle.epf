@@ -1,7 +1,6 @@
 [Eagle]
-Version="07 07 00"
+Version="08 02 02"
 Platform="Linux"
-Serial="62191E841E-LSR-WLM-1EL"
 Globals="Globals"
 Desktop="Desktop"
 
@@ -15,6 +14,7 @@ UsedLibrary="/home/egenjohn/eagle/jke-lbr/DHT.lbr"
 UsedLibrary="/home/egenjohn/eagle/jke-lbr/ESP8266-ESP12.lbr"
 UsedLibrary="/home/egenjohn/eagle/jke-lbr/FT232Adapter.lbr"
 UsedLibrary="/home/egenjohn/eagle/jke-lbr/FYQ-5641.lbr"
+UsedLibrary="/home/egenjohn/eagle/jke-lbr/Inductors.lbr"
 UsedLibrary="/home/egenjohn/eagle/jke-lbr/JKE-StepStick.lbr"
 UsedLibrary="/home/egenjohn/eagle/jke-lbr/LM358.lbr"
 UsedLibrary="/home/egenjohn/eagle/jke-lbr/LM7805.lbr"
