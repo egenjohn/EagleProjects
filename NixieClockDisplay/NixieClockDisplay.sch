@@ -77,18 +77,18 @@ Based on the following sources:
 <wire x1="-8.89" y1="-6.1913" x2="-8.89" y2="6.6675" width="0.254" layer="21"/>
 <wire x1="-8.89" y1="-6.1913" x2="-8.89" y2="-6.35" width="0.254" layer="21"/>
 <circle x="0" y="0" radius="2.54" width="0.127" layer="21"/>
-<pad name="6" x="-0.3175" y="8.8175" drill="1.1" diameter="2.54"/>
-<pad name="9" x="5.1745" y="0" drill="1.1" diameter="2.54"/>
-<pad name="8" x="5.0475" y="4.5" drill="1.1" diameter="2.54"/>
-<pad name="LHDP" x="-0.3175" y="-8.8175" drill="1.1" diameter="2.54"/>
-<pad name="0" x="5.0475" y="-4.5" drill="1.1" diameter="2.54"/>
-<pad name="A" x="3.6825" y="-7.8175" drill="1.1" diameter="2.54"/>
-<pad name="7" x="3.6825" y="7.8175" drill="1.1" diameter="2.54"/>
-<pad name="5" x="-4.3175" y="7.8175" drill="1.1" diameter="2.54"/>
-<pad name="4" x="-6" y="4.5" drill="1.1" diameter="2.54"/>
-<pad name="3" x="-6.127" y="0" drill="1.1" diameter="2.54"/>
-<pad name="2" x="-6" y="-4.5" drill="1.1" diameter="2.54"/>
-<pad name="1" x="-4.3175" y="-7.8175" drill="1.1" diameter="2.54"/>
+<pad name="6" x="-0.3175" y="8.8175" drill="1.6" diameter="2.54"/>
+<pad name="9" x="5.1745" y="0" drill="1.6" diameter="2.54"/>
+<pad name="8" x="5.0475" y="4.5" drill="1.6" diameter="2.54"/>
+<pad name="LHDP" x="-0.3175" y="-8.8175" drill="1.6" diameter="2.54"/>
+<pad name="0" x="5.0475" y="-4.5" drill="1.6" diameter="2.54"/>
+<pad name="A" x="3.6825" y="-7.8175" drill="1.6" diameter="2.54"/>
+<pad name="7" x="3.6825" y="7.8175" drill="1.6" diameter="2.54"/>
+<pad name="5" x="-4.3175" y="7.8175" drill="1.6" diameter="2.54"/>
+<pad name="4" x="-6" y="4.5" drill="1.6" diameter="2.54"/>
+<pad name="3" x="-6.127" y="0" drill="1.6" diameter="2.54"/>
+<pad name="2" x="-6" y="-4.5" drill="1.6" diameter="2.54"/>
+<pad name="1" x="-4.3175" y="-7.8175" drill="1.6" diameter="2.54"/>
 <text x="10.3188" y="-2.8575" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <hole x="0" y="0" drill="5"/>
 </package>
