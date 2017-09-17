@@ -4595,6 +4595,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,36.5548,91.44,R1,,,,,"/>
+<approved hash="113,1,82.2748,93.98,R2,,,,,"/>
+<approved hash="113,1,125.455,91.44,R3,,,,,"/>
+<approved hash="113,1,168.635,91.44,R4,,,,,"/>
+<approved hash="113,1,51.0371,-31.6188,JP1,,,,,"/>
+<approved hash="113,1,91.2029,-34.4212,JP2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
