@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14835,8 +14835,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
-<part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="220k"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="470k"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="1k2"/>
 <part name="X1" library="con-wago-508" deviceset="W237-02P" device=""/>
 <part name="VR1" library="pot" deviceset="TRIM_US-" device="B25P"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
