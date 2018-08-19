@@ -2307,6 +2307,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$18" pad="P$2"/>
 <contactref element="U$17" pad="P$2"/>
 <contactref element="U$16" pad="P$2"/>
+<wire x1="64.77" y1="14.29" x2="69.85" y2="14.29" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="+5V">
 <contactref element="R5" pad="2"/>
